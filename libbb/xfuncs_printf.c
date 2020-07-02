@@ -34,6 +34,7 @@ void FAST_FUNC bb_die_memory_exhausted(void)
 /* dmalloc provides variants of these that do abort() on failure.
  * Since dmalloc's prototypes overwrite the impls here as they are
  * included after these prototypes in libbb.h, all is well.
+ * mark this as Won't Fix
  */
 // Warn if we can't allocate size bytes of memory.
 void* FAST_FUNC malloc_or_warn(size_t size)
